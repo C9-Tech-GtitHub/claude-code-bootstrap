@@ -452,6 +452,11 @@ Create setup-log.md:
 5. **ai-integration-specialist** - OpenAI GPT-5 integration
 6. **project-planner** - Strategic planning & architecture
 
+💡 Recommended MCPs:
+- Supabase (database + auth workflows)
+- Chrome DevTools (browser debugging)
+- Playwright (E2E automation)
+
 💡 How to Use:
 - Claude automatically delegates to specialists
 - Or invoke explicitly: "Use database-specialist to create a users table"
