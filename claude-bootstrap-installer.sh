@@ -11,7 +11,8 @@
 # 3. Guide you to set up your project
 #
 # Author: Claude Code Bootstrap System
-# Version: 1.0.0
+# Version: 2.0.0
+# New: Quick Setup + Detailed Planning modes + Existing project detection
 ################################################################################
 
 set -e
@@ -19,9 +20,10 @@ set -e
 clear
 echo "╔════════════════════════════════════════════════════════════════╗"
 echo "║                                                                ║"
-echo "║          🚀 Claude Code Bootstrap Installer v1.0.0            ║"
+echo "║          🚀 Claude Code Bootstrap Installer v2.0.0            ║"
 echo "║                                                                ║"
-echo "║     Quickly set up Claude Code for any project in minutes     ║"
+echo "║     ⚡ Quick Setup (2 min) or 🎯 Detailed Planning (8 min)    ║"
+echo "║     🔄 Works with existing projects too!                      ║"
 echo "║                                                                ║"
 echo "╚════════════════════════════════════════════════════════════════╝"
 echo ""
@@ -663,7 +665,9 @@ echo ""
 echo "   2. Run this command:"
 echo "      > Use the project-bootstrap agent to set up this project"
 echo ""
-echo "   3. Answer questions about your tech stack"
+echo "   3. Choose your mode:"
+echo "      ⚡ Quick Setup (2 min) - Smart defaults, auto-detection"
+echo "      🎯 Detailed Planning (8 min) - Full customization"
 echo ""
 echo "   4. Get your custom CLAUDE.md + subagents!"
 echo ""
@@ -673,6 +677,9 @@ echo "      git commit -m \"feat: Add Claude Code configuration\""
 echo ""
 echo "📖 For more info:"
 echo "   cat .claude/bootstrap/README.md"
+echo ""
+echo "💡 Pro tip: The bootstrap agent checks for existing config"
+echo "   and offers to update, add specialists, or start fresh!"
 echo ""
 echo "🎉 Happy coding with Claude!"
 echo ""
