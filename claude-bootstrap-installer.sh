@@ -29,14 +29,10 @@ echo ""
 # Check if .claude already exists
 if [ -d ".claude" ]; then
     echo "⚠️  Warning: .claude directory already exists!"
-    echo ""
-    read -p "Do you want to overwrite it? (y/N): " -n 1 -r
-    echo ""
-    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-        echo "❌ Installation cancelled."
-        exit 1
-    fi
     echo "🗑️  Backing up existing .claude to .claude.backup..."
+    if [ -d ".claude.backup" ]; then
+        rm -rf .claude.backup
+    fi
     mv .claude .claude.backup
 fi
 
